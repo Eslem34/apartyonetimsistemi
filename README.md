@@ -4,6 +4,7 @@
 #include<string.h>
 
 int main()
+
 {
 
     int secenek; 
@@ -73,6 +74,7 @@ void ekleme()
 void liste()
 
 {
+
     FILE *olustur;
     
     int id;
@@ -95,7 +97,9 @@ void liste()
 
 
 void silme() 
+
 {
+
     FILE *olustur, *tutulan;
     
     int id, girilenId;
