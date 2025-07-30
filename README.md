@@ -36,6 +36,7 @@ void ekleme()
 {
     FILE *olustur;
     int id, tc;
+    
     char ad[50], soyad[50],cinsiyet[50],telefon[50],eposta[50],dogumtarihi[50],apartgirisgun[50],apartgirisay[50],apartgirisyil[50];
 
     printf("\nid giriniz:");
