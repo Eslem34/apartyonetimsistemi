@@ -1,10 +1,12 @@
 # Apart YÖnetim Sistemi
 #include<stdio.h>
+
 #include<string.h>
 
 int main()
 {
-    int secenek; // secenek değişkeninin türü ifade edilmektedir.
+
+    int secenek; 
     printf("\nYeni kiracı kaydı için 1'i seçiniz");
     printf("\nÖgrenci kaydini silmek icin 2'i seciniz.");
     printf("\nÖgrenci bilgilerini guncellemek icin 3'u seciniz.");
@@ -13,15 +15,15 @@ int main()
     printf("\nKira borcu odemek icin 6'i seciniz.");
     printf("\nElektrik borcu odemek icin 7'i seciniz.");
     printf("\nCikis yapmak icin 8’i seciniz.");
-    scanf("%d", &secenek); //kullanıcıdan seçimi istenmektedir.
+    scanf("%d", &secenek); 
     
-    if(secenek==1) //kullanıcının seçimine göre ilgili işlem yapılmaktadır.
+    if(secenek==1) 
     {
-        ekleme(); //kullanıcı 1.seçeneği seçtiği takdirde kiracı ekleme yapılmaktadır.
+        ekleme(); 
     }
     else if(secenek==2)
     {
-    printf(":idler:\n"); // girilen kiracı id leri yazılmaktadır.
+    printf(":idler:\n"); 
     liste();
     silme();
     }
@@ -29,34 +31,35 @@ int main()
     return 0;
 }
 
-void ekleme() //Fonksiyonların prototipleri deklare edilmektedir.
+void ekleme()
+
 {
     FILE *olustur;
     int id, tc;
     char ad[50], soyad[50],cinsiyet[50],telefon[50],eposta[50],dogumtarihi[50],apartgirisgun[50],apartgirisay[50],apartgirisyil[50];
 
     printf("\nid giriniz:");
-    scanf("%d", &id); //kullanıcıdan id girmesi istenmektedir.
+    scanf("%d", &id); 
     printf("\ntc giriniz:");
-    scanf("%d", &tc);  //kullanıcıdan tc  girmesi istenmektedir.
+    scanf("%d", &tc); 
     printf("\nadını giriniz:");
-    scanf("%s", ad);  //kullanıcıdan ad girmesi istenmektedir.
+    scanf("%s", ad);  
     printf("\nsoyadını giriniz:");
-    scanf("%s", soyad);  //kullanıcıdan soyad girmesi istenmektedir.
+    scanf("%s", soyad);  
     printf("\n(e/k)cinsiyet giriniz:");
-    scanf("%s", cinsiyet);  //kullanıcıdan cinsiyet girmesi istenmektedir.
+    scanf("%s", cinsiyet);  
     printf("\ndoğum tarihini(gün/ay/yil) giriniz:");
-    scanf("%s", dogumtarihi);  //kullanıcıdan doğum tarihi girmesi istenmektedir.
+    scanf("%s", dogumtarihi);  
     printf("\ntelefonunu giriniz:");
-    scanf("%s", telefon);  //kullanıcıdan telefon numarası girmesi istenmektedir.
+    scanf("%s", telefon);  
     printf("\nepostasını giriniz:");
-    scanf("%s", eposta);  //kullanıcıdan e-posta adresi girmesi istenmektedir.
+    scanf("%s", eposta);  
     printf("\naparta giriş gününü giriniz:");
-    scanf("%s", apartgirisgun);  //kullanıcıdan aparta giriş günü girmesi istenmektedir.
+    scanf("%s", apartgirisgun);  
     printf("\naparta giriş ayını (Ocak için 1 , Aralık için 12) giriniz:");
-    scanf("%s", apartgirisay);  //kullanıcıdan aparta giriş ayı girmesi istenmektedir.
+    scanf("%s", apartgirisay);  
     printf("\naparta giriş yılını giriniz:");
-    scanf("%s", apartgirisyil); //kullanıcıdan aparta giriş yılı girmesi istenmektedir.
+    scanf("%s", apartgirisyil); 
 
     olustur = fopen("Ogrenci.txt", "a");  //öğrenci bilgi metnini içeren dosya oluşturulur.               
     fprintf(olustur, "%d %d %s %s %s %s %s %s %s %s %s\n", id, tc, ad, soyad, cinsiyet, dogumtarihi, telefon, eposta, apartgirisgun, apartgirisay, apartgirisyil);
@@ -64,7 +67,7 @@ void ekleme() //Fonksiyonların prototipleri deklare edilmektedir.
 }
 
 
-void liste() //Fonksiyonların prototipleri deklare edilmektedir.
+void liste()
 
 {
     FILE *olustur;
@@ -87,7 +90,7 @@ void liste() //Fonksiyonların prototipleri deklare edilmektedir.
 }
 
 
-void silme() //Fonksiyonların prototipleri deklare edilmektedir.
+void silme() 
 {
     FILE *olustur, *tutulan;
     int id, girilenId;
