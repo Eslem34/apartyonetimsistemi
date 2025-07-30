@@ -1,1 +1,2 @@
-# apartyonetimsistemi
+# Apart Yönetim Sistemi
+C programlama dili kullanılarak geliştirilmiş basit bir apart yönetim sistemidir. Kullanıcılar, komut satırından öğrenci ekleme, silme, listeleme ve borç görüntüleme gibi işlemleri gerçekleştirebilir. Öğrenci bilgileri dosya tabanlı olarak Ogrenci.txt adlı bir metin dosyasında saklanmakta ve işlemler bu dosya üzerinden yürütülmektedir. Sistem, özellikle temel dosya işlemlerini (dosya oluşturma, okuma, yazma, silme) ve kullanıcıdan veri almayı uygulamalı şekilde öğrenmek isteyenler için faydalı bir örnektir.
