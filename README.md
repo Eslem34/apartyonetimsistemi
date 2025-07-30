@@ -34,6 +34,7 @@ int main()
 void ekleme()
 
 {
+
     FILE *olustur;
     
     int id, tc;
