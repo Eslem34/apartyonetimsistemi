@@ -35,6 +35,7 @@ void ekleme()
 
 {
     FILE *olustur;
+    
     int id, tc;
     
     char ad[50], soyad[50],cinsiyet[50],telefon[50],eposta[50],dogumtarihi[50],apartgirisgun[50],apartgirisay[50],apartgirisyil[50];
@@ -72,6 +73,7 @@ void liste()
 
 {
     FILE *olustur;
+    
     int id;
     char ad[50], soyad[50], tc[50];
     char cinsiyet[50];
@@ -94,6 +96,7 @@ void liste()
 void silme() 
 {
     FILE *olustur, *tutulan;
+    
     int id, girilenId;
     char ad[50], soyad[50], tc[50];
     char cinsiyet[50];
