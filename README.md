@@ -7,14 +7,23 @@
 int main()
 {
     int secenek; 
+    
     printf("\nYeni kiracı kaydı için 1'i seçiniz");
+    
     printf("\nÖgrenci kaydini silmek icin 2'i seciniz.");
+    
     printf("\nÖgrenci bilgilerini guncellemek icin 3'u seciniz.");
+    
     printf("\nÖgrenci bilgilerini isim sırası A-Z’ye olacak biçimde listelemek için 4'u seciniz");
+    
     printf("\nÖgrenci borc bilgilerini listelemek için 5’i seciniz.");
+    
     printf("\nKira borcu odemek icin 6'i seciniz.");
+    
     printf("\nElektrik borcu odemek icin 7'i seciniz.");
+    
     printf("\nCikis yapmak icin 8’i seciniz.");
+    
     scanf("%d", &secenek); //kullanıcıdan seçimi istenmektedir.
     
     if(secenek==1) 
