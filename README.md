@@ -120,6 +120,7 @@ void silme()
     
    while (fscanf(olustur, "%d %s %s %s %s %s %s %s %s %s %s\n", &id, tc, ad, soyad, cinsiyet, dogumtarihi, telefon, eposta, apartgirisgun, apartgirisay, apartgirisyil) != EOF)
     {
+    
         if (id != girilenId) 
         {                                                    
             fprintf(tutulan, "%d %s %s %s %s %s %s %s %s %s %s\n", id, tc, ad, soyad, cinsiyet, dogumtarihi, telefon, eposta, apartgirisgun, apartgirisay, apartgirisyil); 
