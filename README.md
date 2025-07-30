@@ -6,6 +6,7 @@
 
 int main()
 {
+
     int secenek; 
     
     printf("\nYeni kiracı kaydı için 1'i seçiniz");
