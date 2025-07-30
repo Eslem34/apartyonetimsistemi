@@ -40,42 +40,67 @@ int main()
     return 0;
 }
 
-void ekleme() //Fonksiyonların prototipleri deklare edilmektedir.
+void ekleme() 
+
 {
     FILE *olustur;
+    
     int id, tc;
+    
     char ad[50], soyad[50],cinsiyet[50],telefon[50],eposta[50],dogumtarihi[50],apartgirisgun[50],apartgirisay[50],apartgirisyil[50];
 
     printf("\nid giriniz:");
+    
     scanf("%d", &id); 
+    
     printf("\ntc giriniz:");
+    
     scanf("%d", &tc);  
+    
     printf("\nadını giriniz:");
+    
     scanf("%s", ad); 
+    
     printf("\nsoyadını giriniz:");
+    
     scanf("%s", soyad);  
+    
     printf("\n(e/k)cinsiyet giriniz:");
+    
     scanf("%s", cinsiyet);  
+    
     printf("\ndoğum tarihini(gün/ay/yil) giriniz:");
-    scanf("%s", dogumtarihi);  
+    
+    scanf("%s", dogumtarihi);
+    
     printf("\ntelefonunu giriniz:");
+    
     scanf("%s", telefon); 
+    
     printf("\nepostasını giriniz:");
-    scanf("%s", eposta);  
+    
+    scanf("%s", eposta);
+    
     printf("\naparta giriş gününü giriniz:");
-    scanf("%s", apartgirisgun); 
+    
+    scanf("%s", apartgirisgun);
+    
     printf("\naparta giriş ayını (Ocak için 1 , Aralık için 12) giriniz:");
+    
     scanf("%s", apartgirisay);  
+    
     printf("\naparta giriş yılını giriniz:");
+    
     scanf("%s", apartgirisyil); 
 
-    olustur = fopen("Ogrenci.txt", "a");  //öğrenci bilgi metnini içeren dosya oluşturulur.               
+    olustur = fopen("Ogrenci.txt", "a");  
+    
     fprintf(olustur, "%d %d %s %s %s %s %s %s %s %s %s\n", id, tc, ad, soyad, cinsiyet, dogumtarihi, telefon, eposta, apartgirisgun, apartgirisay, apartgirisyil);
     fclose(olustur);                                    
 }
 
 
-void liste() //Fonksiyonların prototipleri deklare edilmektedir.
+void liste() 
 
 {
     FILE *olustur;
