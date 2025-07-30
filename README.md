@@ -1,4 +1,4 @@
-# Apart YÖnetim Sistemi
+# Apart Yönetim Sistemi
 #include<stdio.h>
 
 #include<string.h>
