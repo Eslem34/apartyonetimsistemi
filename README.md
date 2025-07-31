@@ -1,4 +1,5 @@
 # Apart Yönetim Sistemi
+C programlama dili kullanılarak yazılan uygulama
 
 #include<stdio.h>
 
